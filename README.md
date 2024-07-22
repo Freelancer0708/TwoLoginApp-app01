@@ -1,13 +1,11 @@
 <h2>インストールに必要なもの</h2>
-<code>
-npm install next@latest react@latest react-dom@latest
+<code>npm install next@latest react@latest react-dom@latest
 npm install --save-dev typescript @types/react @types/node
 npm install firebase
 </code>
 
 <h3>.env.local</h3>
-<code>
-NEXT_PUBLIC_FIREBASE_API_KEY=
+<code>NEXT_PUBLIC_FIREBASE_API_KEY=
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=
 NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
