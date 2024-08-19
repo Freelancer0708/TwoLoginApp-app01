@@ -1,11 +1,11 @@
 // hoc/withAuth.tsx
-import { useAuthContext } from '../contexts/AuthContext';
+import { useAuthContextAdmin } from '../contexts/AuthContextAdmin';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
 const withAuth = (WrappedComponent: React.ComponentType) => {
     const ComponentWithAuth = (props: any) => {
-        const { user } = useAuthContext();
+        const { user } = useAuthContextAdmin();
         const router = useRouter();
         useEffect(() => {
             if (user === undefined) return; // 初期状態では何もせず、ユーザー状態が確定するまで待つ
