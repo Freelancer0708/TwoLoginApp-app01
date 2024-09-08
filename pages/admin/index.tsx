@@ -1,8 +1,11 @@
 import React from 'react';
-export default function Admin() {
+import withAuthAdmin from '../../hoc/withAuthAdmin';
+const Admin = () => {
     return (
         <>
             <h1>Home Admin</h1>
         </>
     )
   }
+
+export default withAuthAdmin(Admin);
