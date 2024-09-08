@@ -3,7 +3,7 @@ import { useAuthContextUser } from '../contexts/AuthContextUser';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-const withAuth = (WrappedComponent: React.ComponentType) => {
+const withAuthUser = (WrappedComponent: React.ComponentType) => {
     const ComponentWithAuth = (props: any) => {
         const { user } = useAuthContextUser();
         const router = useRouter();
@@ -23,4 +23,4 @@ const withAuth = (WrappedComponent: React.ComponentType) => {
     };
     return ComponentWithAuth;
 };
-export default withAuth;
+export default withAuthUser;

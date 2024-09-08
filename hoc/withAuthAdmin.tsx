@@ -3,7 +3,7 @@ import { useAuthContextAdmin } from '../contexts/AuthContextAdmin';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-const withAuth = (WrappedComponent: React.ComponentType) => {
+const withAuthAdmin = (WrappedComponent: React.ComponentType) => {
     const ComponentWithAuth = (props: any) => {
         const { user } = useAuthContextAdmin();
         const router = useRouter();
@@ -23,4 +23,4 @@ const withAuth = (WrappedComponent: React.ComponentType) => {
     };
     return ComponentWithAuth;
 };
-export default withAuth;
+export default withAuthAdmin;
