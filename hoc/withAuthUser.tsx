@@ -10,7 +10,7 @@ const withAuthUser = (WrappedComponent: React.ComponentType) => {
         useEffect(() => {
             if (user === undefined) return; // 初期状態では何もせず、ユーザー状態が確定するまで待つ
             if (user === null) {
-                router.push('/login'); // ログインページのパスに置き換えてください
+                router.push('/user/login'); // ログインページのパスに置き換えてください
             }
         }, [user, router]);
         if (user === undefined) {
